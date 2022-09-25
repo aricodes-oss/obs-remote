@@ -11,11 +11,21 @@ readme = "README.md"
 [[tool.poetry.packages]]
 include = "obs_remote"
 
+[tool.poetry.scripts]
+obscon = 'obs_remote.main:main'
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+black = "^22.8.0"
+flake8-black = "^0.3.3"
+flake8-annotations = "^2.9.1"
+pex = "^2.1.105"
+
 [tool.black]
 line-length = 95
 target-version = [ "py39",]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.12"
 obsws-python = "^1.1.0"
 toml = "^0.10.2"
