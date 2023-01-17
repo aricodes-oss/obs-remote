@@ -10,7 +10,7 @@ python-versions = ">=3.5"
 dev = ["cloudpickle", "coverage[toml] (>=5.0.2)", "furo", "hypothesis", "mypy (>=0.900,!=0.940)", "pre-commit", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "sphinx", "sphinx-notfound-page", "zope.interface"]
 docs = ["furo", "sphinx", "sphinx-notfound-page", "zope.interface"]
 tests = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "zope.interface"]
-tests_no_zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins"]
+tests-no-zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins"]
 
 [[package]]
 name = "black"
@@ -108,11 +108,11 @@ python-versions = "*"
 
 [[package]]
 name = "obsws-python"
-version = "1.1.0"
+version = "1.4.1"
 description = "A Python SDK for OBS Studio WebSocket v5.0"
 category = "main"
 optional = false
-python-versions = ">=3.10"
+python-versions = ">=3.9"
 
 [package.dependencies]
 tomli = {version = ">=2.0.1", markers = "python_version < \"3.11\""}
@@ -200,7 +200,7 @@ test = ["websockets"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10,<3.12"
-content-hash = "9ea842b35b6921ca29ad6e0ebdf5ad6fed4b0ccf2af5529f6e56a1d37a17f9b5"
+content-hash = "c85ccba35305757ce021f528e9140ec1977a66f7f658bd0ce00b863ba354da09"
 
 [metadata.files]
 attrs = [
@@ -261,8 +261,8 @@ mypy-extensions = [
     {file = "mypy_extensions-0.4.3.tar.gz", hash = "sha256:2d82818f5bb3e369420cb3c4060a7970edba416647068eb4c5343488a6c604a8"},
 ]
 obsws-python = [
-    {file = "obsws-python-1.1.0.tar.gz", hash = "sha256:d953486a7a15729e4ada29c004bcf71f4dba45aaf350bdace3abd87e3bc14f00"},
-    {file = "obsws_python-1.1.0-py3-none-any.whl", hash = "sha256:d0378cb08ace570405fe58d1abc5e98e7b82d4036199d46db29d9350f7d31a43"},
+    {file = "obsws_python-1.4.1-py3-none-any.whl", hash = "sha256:dac1141f293cf05ddaae8b5ea80cc74c226bdee9bee466871a9891465acb6fb0"},
+    {file = "obsws_python-1.4.1.tar.gz", hash = "sha256:ebc669e23a276276fc3c46682f5e547d14a433f577d693e3a62c68c258e8d3d5"},
 ]
 pathspec = [
     {file = "pathspec-0.10.1-py3-none-any.whl", hash = "sha256:46846318467efc4556ccfd27816e004270a9eeeeb4d062ce5e6fc7a87c573f93"},
